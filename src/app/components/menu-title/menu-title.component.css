@@ -1,15 +1,43 @@
 .menu-title{
-    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.menu-title > h1{
+.blog-title > span{
+    color: #c73838;
+}
+
+.blog-title{
     margin: 15px 0;
     font-family: 'Segoe UI';
     text-transform: uppercase;
     font-size: 8.75rem;
     font-weight: 600;
+}
+
+.title-content{
     display: flex;
+    gap: 50px;
+    align-items: center;
     justify-content: center;
+}
+
+.title-content > img{
+    height: 100px;
+    display: block;
+    max-width: 100%;
+    animation: shake 1s infinite alternate ;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateY(-35px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
 }
 
 .menu-title > hr{
