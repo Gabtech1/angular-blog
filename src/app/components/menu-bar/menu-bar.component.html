@@ -1,17 +1,24 @@
 <div class="menu-container">
     <div class="logo">
-        <img src="../../../assets/logo.png" alt="">
+        <img src="../../../assets/logo.avif" alt="">
     </div>
 
     <div class="menu-list">
-        <ul>
-            <li><a [routerLink]="['']">Home</a></li>
-            <li><span>•</span></li>
-            <li><a target="_blank" href="https://github.com/Gabtech1">Github</a></li>
-            <li><span>•</span></li>
-            <li><a target="_blank" href="https://gabdev.com.br/">Portfolio</a></li>
-            <li><span>•</span></li>
-            <li><a target="_blank" href="https://www.linkedin.com/in/gabriel-aparecido-da-paix%C3%A3o-118a88226/">Linkedin</a></li>
+        <ul class="nav-list">
+            <li><a class="nav-link" [routerLink]="['']">Home</a></li>
+            <li><span class="test">•</span></li>
+            <li><a class="nav-link" href="#leader">Classificação</a></li>
+            <li><span class="test">•</span></li>
+            <li><a class="nav-link" target="_blank" href="https://github.com/Gabtech1">Github</a></li>
+            <li><span class="test">•</span></li>
+            <li><a class="nav-link" target="_blank" href="https://gabdev.com.br/">Portfolio</a></li>
+            <li><span class="test">•</span></li>
+            <li><a class="nav-link" target="_blank" href="https://www.linkedin.com/in/gabriel-aparecido-da-paix%C3%A3o-118a88226/">Linkedin</a></li>
         </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </div>   
 </div>

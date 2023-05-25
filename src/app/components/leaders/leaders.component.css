@@ -1,0 +1,121 @@
+.leaders-container{
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.leaders-title{
+    grid-column: 1/-1;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 80px;
+    text-decoration: underline 3px #c73838;
+    text-transform: uppercase;
+}
+
+.leaders-text > p{
+    font-size: 1.75rem;
+    color: #c4c4c4;
+    max-width: 50ch;
+}
+
+.score > img{
+    height: 400px;
+    max-width: 100%;
+    border: 1.5px solid #000000;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.082);
+}
+
+.dec{
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.dec-item img{
+    display: block;
+    max-width: 100%;
+    box-shadow: 0.2rem 0.2rem 4rem #555555;
+}
+
+@media (max-width: 1201px){
+    .leaders-text > p{
+        font-size: 1.5rem;
+        max-width: 40ch;
+    }
+    
+    .score > img{
+        height: 350px;
+    }
+}
+
+@media (max-width:1000px) {
+    .leaders-container{
+        grid-template-columns: 1fr;
+    }
+    .leaders-text > p{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .score{
+        margin: 0 auto;
+    }
+    .score > img{
+        height: 400px;
+    }
+    
+}
+
+@media (max-width:800px) {
+    .score > img{
+        height: 350px;
+    }
+
+    .leaders-title{
+        font-size: 2rem;
+    }
+
+    .dec{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width:600px) {
+    .score > img{
+        height: 275px;
+    }
+
+    .leaders-title{
+        font-size: 1.5rem;
+    }
+
+    .leaders-text > p{
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:500px) {
+    .leaders-container{
+        padding-bottom: 40px;
+    }
+    .score > img{
+        height: 225px;
+    }
+
+    .leaders-title{
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .leaders-text > p{
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+}
